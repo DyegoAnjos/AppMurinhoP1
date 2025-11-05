@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/cadastroProdutos_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Produto</title>
+</head>
+<body>
+    <header id="cabecalhoIntermediario">
+        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
+        <h1>Novo Produto</h1>
+        <a href="homePage.html" target="_self"><i class="fa-solid fa-x botaoVoltar"></i></a>
+    </header>
+    <main>
+        <form id="cadastrarProduto" method="gat" action="editar_perfil.html" enctype="multipart/form-data">
+            <div class="form-group" id="fotoProduto">            
+                <img src="" alt="Foto do Produto" class="fotoProduto" id="imagemPreview">
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <div class="cluster">
+                <div class="form-group" id="nomeProduto">
+                    <label for="nome" class="chave">Nome:</label>
+                    <input type="text" id="texto" name="nomeProduto" required placeholder="Nome do Produto">
+                </div>
+                <div class="form-group" id="valorProduto">
+                    <label for="valor" class="chave">Valor R$:</label>
+                    <input type="number" id="texto" name="valorProduto" placeholder="R$ 0,00" required>
+                </div>
+                <div div class="form-group" id="formas-pagamento">
+                    <label for="formaPagamento" class="chave">Forma de Pagamento:</label>
+                    <label><input type="checkbox" name="pagamento[]" title="dinheiro"><i class="fa-solid fa-money-bill formaPagamento"></i>Dinheiro</label>
+                    <label><input type="checkbox" name="pagamento[]" title="pix"><i class="fa-brands fa-pix formaPagamento"></i>Pix</label>
+                </div>
+                <div class="form-group" id="dia-hora">
+                    <label class="chave">Dias e Horários:</label>
+                    <table class="calendario-horarios">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Seg</th>
+                                <th>Ter</th>
+                                <th>Qua</th>
+                                <th>Qui</th>
+                                <th>Sex</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>08:00-10:00</th>
+                                <td><input type="checkbox" name="horarios[08:00-10:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[08:00-10:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[08:00-10:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[08:00-10:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[08:00-10:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>10:00-12:00</th>
+                                <td><input type="checkbox" name="horarios[10:00-12:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[10:00-12:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[10:00-12:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[10:00-12:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[10:00-12:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>12:00-14:00</th>
+                                <td><input type="checkbox" name="horarios[12:00-14:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[12:00-14:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[12:00-14:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[12:00-14:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[12:00-14:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>14:00-16:00</th>
+                                <td><input type="checkbox" name="horarios[14:00-16:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[14:00-16:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[14:00-16:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[14:00-16:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[14:00-16:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>16:00-18:00</th>
+                                <td><input type="checkbox" name="horarios[16:00-18:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[16:00-18:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[16:00-18:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[16:00-18:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[16:00-18:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>18:00-20:00</th>
+                                <td><input type="checkbox" name="horarios[18:00-20:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[18:00-20:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[18:00-20:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[18:00-20:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[18:00-20:00][sexta]"></td>
+                            </tr>
+                            <tr>
+                                <th>20:00-22:00</th>
+                                <td><input type="checkbox" name="horarios[20:00-22:00][segunda]"></td>
+                                <td><input type="checkbox" name="horarios[20:00-22:00][terca]"></td>
+                                <td><input type="checkbox" name="horarios[20:00-22:00][quarta]"></td>
+                                <td><input type="checkbox" name="horarios[20:00-22:00][quinta]"></td>
+                                <td><input type="checkbox" name="horarios[20:00-22:00][sexta]"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+                <div class="form-group" id="descricao">
+                    <label for="descricao" class="chave">Descrição:</label>
+                    <textarea id="texto" class="descricao" name="descricao" rows="4" maxlength="250" required placeholder="Descrição do Produto"></textarea>
+                </div>
+            </div>
+            <a href="cadastroProduto_feedback.html" type="submit" id="botaoEditar" class="botaoEditar">Cadastrar Produto</a>
+            <a href="perfil_user.html" type="submit" id="botaoEditar" class="botaoEditar">Cancelar</a>
+        </form>
+    </main>
+    <footer>
+        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
+        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
+        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
+        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
+        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+    
+    <script>
+        // Script para preview da imagem do produto
+        document.getElementById('foto').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const imagemPreview = document.getElementById('imagemPreview');
+            
+            if (file) {
+                // Verifica se o arquivo é uma imagem
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        imagemPreview.src = e.target.result;
+                        imagemPreview.style.display = 'block';
+                    };
+                    
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Por favor, selecione apenas arquivos de imagem.');
+                    event.target.value = '';
+                }
+            } else {
+                // Remove a imagem se nenhum arquivo for selecionado
+                imagemPreview.src = '';
+                imagemPreview.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

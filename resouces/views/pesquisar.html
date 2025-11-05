@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/Pesquisar_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="cabecalhoIntermediario">
+        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
+        <h1>PESQUISAR</h1>
+        <a href="homePage.html" target="_self"><i class="fa-solid fa-x botaoVoltar"></i></a>
+    </header>
+    <main>
+        <form action="homePage.html" method="get">
+            <label>
+                <input type="text" class="inputPesquisar" placeholder="Pesquisar..." required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></button>
+            </label>
+            <div class="botoes">
+                <button type="button" class="botaoFiltro">Doces</button>
+                <button type="button" class="botaoFiltro">Salgados</button>
+                <button type="button" class="botaoFiltro">Roupas</button>
+                <button type="button" class="botaoFiltro">Livros</button>
+            </div>
+            <label>
+                R$+ <input type="number" placeholder="R$ 100" class="inputValor" min="1">
+            </label>
+            <label>
+                R$- <input type="number" placeholder="R$ 1" class="inputValor" min="1">
+            </label>
+        </form>
+    </main>
+    <footer>
+        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
+        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
+        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
+        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
+        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/editarPerfil_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+</head>
+<body>
+    <header>
+        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
+        <nav>
+            <a href="clima.html" target="_self" rel="noopener noreferrer"><i class="fa-solid fa-cloud botaoClima"></i></a>
+            <a href="sortear.html" target="_self" rel="noopener noreferrer"><img src="../../public/img/Roleta.png" alt="Roleta"></a>
+            <a href="ranking.html" target="_self" rel="noopener noreferrer"><i class="fa-solid fa-ranking-star botaoRanking"></i></a>
+        </nav>
+    </header>
+    <main>
+        <form id="edit-profile-form" method="get" action="perfil_user.html" enctype="multipart/form-data">
+            <div class="form-group" id="capaPerfil">            
+                <img src="../../public/img/capa-exemplo.jpg" alt="fotoCapa" class="fotoCapa">
+                <input type="file" id="banner" name="banner" accept="image/*">
+            </div>
+            <div class="cluster">
+              <div class="form-group" id="perfil">
+                  <img src="../../public/img/Foto_Perfil.png" alt="Foto Perfil" class="fotoPerfil">                
+                  <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*">
+              </div>
+              <div class="form-group" id="perfil">
+                  <label for="nome" class="chave">Nome:</label>
+                  <input type="text" id="texto" name="nome" required value="Maria Andrade" autocomplete="off">
+              </div>
+              <div class="form-group" id="nascimento">
+                  <label for="nascimento" class="chave">Data de Nascimento:</label>
+                  <input type="date" id="texto" name="nascimento" value="2000-05-15" autocomplete="off">
+              </div>
+            </div>
+            <div class="form-group" id="descricao">
+                <label for="descricao" class="chave">Descrição:</label>
+                <textarea id="texto" class="descricao" name="descricao" rows="4" maxlength="250">Estudante de Sistemas de Informação, apaixonada por tecnologia e música.</textarea>
+            </div>
+            <div class="form-group" id="email">     
+                <label for="email" class="chave">E-mail:</label>
+                <input type="email" id="texto" name="email" required value="mari.andrade@edu.unirio.br" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="tel" class="chave">Celular:</label>
+                <input type="tel" id="texto" name="phone" value="21975846355" placeholder="(XX) XXXXX-XXXX" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="senha" class="chave">Nova Senha:</label>
+                <input type="senha" id="texto" name="senha" value="" placeholder="Redefinir senha">
+            </div>
+            <button type="submit" id="botaoEditar" class="botaoEditar" onclick="">Salvar Alterações</button>
+            <button type="submit" id="botaoEditar" class="botaoEditar" onclick="">Cancelar</button>
+        </form>
+    </main>
+    <footer>
+        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
+        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
+        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
+        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
+        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+</body>
+</html>
