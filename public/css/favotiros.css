@@ -18,160 +18,145 @@ main{
     margin-bottom: 7rem;
 }
 
-main img{
-    width: 10%;
-}
-
-#containerAtualizacoes{
-    width: 100%;
+form{
+    width: 75%;
     height: 100%;
-    background-color: var(--cor-principal);
+    min-height: 50vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    justify-content: center;
     gap: 1rem;
-    padding: 1rem;
-    box-shadow: inset 0px 0px 6px 5px;
 }
 
-#containerAtualizacoes a{
-    width: 5rem;
-}
-
-.fotoAtualizacao{
-    width: 5rem;
-    border-radius: 10rem;
-    border: solid 5px var(--cor-apoio);
-}
-
-.botaoAdicionar{
-    width: 4.5rem;
-    background-color: var(--cor-fundo);
-    text-align: center;
-    font-size: 4rem;
-    border-radius: 10rem;
-    border: solid 5px var(--cor-apoio);
-}
-
-#subCabecalho{
-    text-align: center;
+label{
     background-color: var(--cor-principal);
-    padding: .5rem;
-    border-radius: 10rem;
-}
-
-/* Estilo dos Posts */
-#containerPosts{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1rem;
-    padding: 1rem 0 1rem 0;
-    gap: .5rem;
-}
-
-.post img{
-    width: 100%;
-}
-
-.postCabecalho{
-    width: 100%;
-    height: 10%;
-    position: relative;
+    min-height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 1rem 0 1rem;
-    margin-bottom: .5rem;
-}
-
-.postCabecalho a{
-    display: flex;
-    align-items: start;
-    gap: .3rem;
-    font-weight: 600;
-    color: black;
+    border-radius: 1rem;
     font-size: 1.5rem;
-    margin:  0 1rem;
 }
 
-.postCabecalho a img{
-    border-radius: 100%;
-}
-
-.postCabecalho img{
-    width: 15%;
-}
-
-.postCabecalho .pontos{
-    width: 100%;
-    background: none;
+input{
+    background-color: var(--cor-fundo);
+    width: 80%;
+    height: 2rem;
+    border-radius: 5rem;
     border: none;
-
-    i{
-        font-size: 1.5rem;
-    }
-}
-
-.botaoDenunciar i{
-    color: red;
-}
-
-.popupOpcoes{
-    background-color: var(--cor-principal);
-    position: absolute;    
-    z-index: 0;
     padding: 1rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    top: 2rem;
-    right: 3rem;
-    gap: .3rem;
 }
 
-.popupOpcoes a{
-    width: 100%;
-    text-align: center;
+.botaoBusca{
+    background-color: var(--cor-fundo);
+    border: none;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 5rem;
+    font-size: 1rem;
 }
 
-.popupOpcoes a:last-child{
-    border-top: solid 1px var(--cor-preto);
+.botaoBusca:hover{
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
 }
 
-.postRodape{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+/* estilo dos posts */
+#produtosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
 }
 
 .botaoFavoritar{
     width: 6%;
     background: none;
     border: none;
-    i{
-        font-size: 1.5rem;
+}
+
+.botaoFavoritar i{
+    font-size: 1.5rem;
+}
+
+/*como as imgs sao exibidas
+honestamente é um copy-paste de como é feito na exibiçao dos perfis*/
+.exibicao {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--cor-fundo, #fafafa);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: transform 0.15s;
+}
+
+.exibicao:hover {
+    transform: translateY(-4px);
+}
+
+.exibicao img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--cor-fundo);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: transform 0.15s;
+}
+.exibicao img:hover {
+    transform: scale(1.03);
+}
+
+/* overlay das infos fica ocultado por padrão */
+.produtoInfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.6rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* mostra o overlay */
+.exibicao:hover .produtoInfo {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: var(--cor-preto);
+}
+
+/* config dos textos do overlay */
+.produtoInfo .nomeProduto {
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    color: var(--cor-fundo);
+}
+
+.produtoInfo .preco {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cor-fundo)
+}
+
+@media (max-width: 800px) {
+    #produtosContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
-}
-
-.preco{
-    font-size: 1.5rem;
-}
-
-.postRodape .formaPagamento{
-    font-size: 1.5rem;
 }

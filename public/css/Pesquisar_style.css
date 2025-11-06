@@ -10,7 +10,6 @@ main{
 }
 
 form{
-    /* background-color: red; */
     width: 90%;
     height: 100%;
     min-height: 50vh;
@@ -19,19 +18,7 @@ form{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    gap: 2rem;
-}
-
-label{
-    background-color: var(--cor-principal);
-    width: 100%;
-    height: 100%;
-    min-height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 1rem;
-    font-size: 1.5rem;
+    gap: 1rem;
 }
 
 input{
@@ -43,47 +30,187 @@ input{
     padding: 1rem;
 }
 
-button[type="submit"]{
+.botoes{
+    background-color: var(--cor-principal);
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.75rem;
+}
+
+.botaoFiltro{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .25rem 0;
+    padding: 0.4rem .9rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--cor-fundo);
+    color: var(--cor-preto);
+    font-size: .9rem;
+    text-decoration: none;
+    transition: 0.1s;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.08);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botaoFiltro input[type="number"],
+.inputValor{
+    width: 5.2rem;
+    max-width: 6rem;
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: transparent;
+    color: inherit;
+    font-size: .85rem;
+    margin-left: .25rem;
+    box-sizing: border-box;
+}
+
+.botaoFiltro:hover{
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
+}
+
+.labelPesquisar{
+    background-color: var(--cor-principal);
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.labelPesquisar input{
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 2rem;
+    border-radius: 5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
+
+.botaoBusca{
     background-color: var(--cor-fundo);
     border: none;
-    width: 10%;
-    height: 2rem;
+    width: 5rem;
+    height: 1.5rem;
     border-radius: 5rem;
     font-size: 1rem;
 }
 
-.botoes{
-    background-color: var(--cor-principal);
-    height: 50%;
-    width: 100%;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
+.botaoBusca:hover{
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
 }
 
-.botaoFiltro{
-    width: 40%;
-    min-width: 6rem;
-    height: 2rem;
-
-    background-color: var(--cor-fundo);
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0px 0px 3px 3px;
-    transition: .1s;
-}
-
-.botaoFiltro:hover{
-    transition: .1s;
-    background-color: var(--cor-apoio);
-    border: solid 3px var(--cor-fundo);
-}
 
 .botaoFiltroSelecionado{
     background-color: var(--cor-apoio);
-    border: solid 3px var(--cor-fundo);
+    border: var(--cor-fundo);
+}
+
+/* estilo dos posts */
+#produtosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+}
+
+.botaoFavoritar{
+    width: 6%;
+    background: none;
+    border: none;
+}
+
+.botaoFavoritar i{
+    font-size: 1.5rem;
+}
+
+/*como as imgs sao exibidas
+honestamente é um copy-paste de como é feito na exibiçao dos perfis*/
+.exibicao {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--cor-fundo, #fafafa);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: transform 0.15s;
+}
+
+.exibicao:hover {
+    transform: translateY(-4px);
+}
+
+.exibicao img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--cor-fundo);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: transform 0.15s;
+}
+.exibicao img:hover {
+    transform: scale(1.03);
+}
+
+/* overlay das infos fica ocultado por padrão */
+.produtoInfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.6rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* mostra o overlay */
+.exibicao:hover .produtoInfo {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: var(--cor-preto);
+}
+
+/* config dos textos do overlay */
+.produtoInfo .nomeProduto {
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    color: var(--cor-fundo);
+}
+
+.produtoInfo .preco {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cor-fundo)
 }

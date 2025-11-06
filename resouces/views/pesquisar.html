@@ -21,31 +21,62 @@
     </header>
     <main>
         <form action="homePage.html" method="get">
-            <label>
-                <input type="text" class="inputPesquisar" placeholder="Pesquisar..." required>
-                <button type="submit"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></button>
+            <label class="labelPesquisar">
+                <input type="text" class="inputPesquisar" placeholder="Pesquisar produtos..." required>
+                <button type="submit" class="botaoBusca"><i class="fa-solid fa-magnifying-glass"></i></button>
             </label>
             <div class="botoes">
                 <button type="button" class="botaoFiltro">Doces</button>
                 <button type="button" class="botaoFiltro">Salgados</button>
                 <button type="button" class="botaoFiltro">Roupas</button>
                 <button type="button" class="botaoFiltro">Livros</button>
+                <label for="filtroValor" class="botaoFiltro botaoFiltroSelecionado">
+                    R$+ <input type="number" placeholder="R$ 100" class="inputValor" min="1">
+                </label>
+                <label for="filtroValor" class="botaoFiltro botaoFiltroSelecionado">
+                    R$- <input type="number" placeholder="R$ 1" class="inputValor" min="1">
+                </label>
             </div>
-            <label>
-                R$+ <input type="number" placeholder="R$ 100" class="inputValor" min="1">
-            </label>
-            <label>
-                R$- <input type="number" placeholder="R$ 1" class="inputValor" min="1">
-            </label>
+            
         </form>
+
+        <h1>Pesquisa de Produtos</h1>
+        <div id="produtosContainer">
+            <a href="vendedor.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem de um gato usando touca">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Toucas para gatinhos</p>
+                    <p class="preco">R$ 49,99</p>
+                    <p class="botaoFavoritar"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a>
+            <a href="perfil_user.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Imagem de brigadeiros">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Brigadeiros da Mari</p>
+                    <p class="preco">R$ 2,00</p>
+                    <p class="botaoFavoritar"><i class="fa-regular fa-heart"></i></p>
+                </div>
+            </a>    
+            <a href="vendedor.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem de um gato usando touca">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Toucas para gatinhos</p>
+                    <p class="preco">R$ 49,99</p>
+                    <p class="botaoFavoritar"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a>
+            <a href="perfil_user.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Imagem de brigadeiros">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Brigadeiros da Mari</p>
+                    <p class="preco">R$ 2,00</p>
+                    <p class="botaoFavoritar"><i class="fa-regular fa-heart"></i></p>
+                </div>
+            </a>
+        </div>
     </main>
-    <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
-    </footer>
+    
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
 </body>
 </html>

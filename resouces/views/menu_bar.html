@@ -8,56 +8,34 @@
     <title>Menu</title>
 </head>
 <body>
-    <header>
-        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
-        <nav>
-            <a href="clima.html" target="_self" rel="noopener noreferrer"><i class="fa-solid fa-cloud botaoClima"></i></a>
-            <a href="sortear.html" target="_self" rel="noopener noreferrer"><img src="../../public/img/Roleta.png" alt="Roleta"></a>
-            <a href="ranking.html" target="_self" rel="noopener noreferrer"><i class="fa-solid fa-ranking-star botaoRanking"></i></a>
-        </nav>
-    </header>
     <main>
-        <div id="clusterPerfil">
-            <img src="../../public/img/Foto_Perfil.png" alt="Foto de Perfil" class="fotoPerfil">
-            <div class="clusterPerfil">
-                <p>Maria Andrade</p>
-                <a href="perfil_user.html">Ver Perfil</a>
+        <!-- a visibilidade vai depender de integrar o JS depois,
+         aqui foi so pra ja deixar montado o esqueleto -->
+        <aside id="menuSidebar" aria-hidden="true" class="open">
+            <div id="clusterPerfil">
+                <img src="https://paradepets.com/.image/c_fill,w_1200,h_1200,g_faces:center/NTowMDAwMDAwMDAwMTI0NDYz/sleepy-kitten.jpg" alt="Foto de Perfil" class="fotoPerfil">
+                <div class="clusterPerfil">
+                    <p>Maria Andrade</p>
+                    <a href="perfil_user.html">Ver Perfil</a>
+                </div>
+                <a href="notificacoes.html" class="botaoNotificacao"><i class="fa-solid fa-bell"></i></a>
             </div>
-            <a href="notificacoes.html" class="botaoNotificacao"><i class="fa-solid fa-bell"></i></a>
-        </div>
-        <hr>
-        <div id="cluster">
-            <h4 class="clusterNome">Vender no Murinho</h4>
-            <a href="cadastro_produto.html">Cadastrar Produtos</a><br>
-            <a href="meus_produtos.html">Meus Produtos</a><br>
-            <a href="encomendas_recebidas.html">Encomendas Recebidas</a><br>
-        </div>
-        <hr>
-        <div id="cluster">
-            <h4 class="clusterNome">Comprar no Murinho</h4>
-            <a href="favoritos.html">Favoritos</a><br>
-        </div>
-        <hr>
-        <div id="cluster">
-            <h4 class="clusterNome">Geral</h4>
-            <a href="enquetes.html">Enquetes</a><br>
-            <a href="clima.html">Clima</a><br>
-            <a href="noticias.html">Notícias</a><br>
-            <a href="cadastrar_enquete.html">Cadastrar Enquetes</a><br>
-            <a href="ranking.html">Ranking</a><br>
-            <a href="sortear.html">Roleta</a><br>
-            <a href="mural_sugestoes.html">Mural de Sugestões</a><br>
-            <a href="quem_somos.html">Quem Somos</a><br>
-            <a href="../../index.html" target="_self">Sair</a>
-        </div>
+            <hr>
+            <nav class="menuSection" aria-label="Vender no Murinho">
+                <h4 class="sectionTitle">Vender no Murinho</h4>
+                <a href="cadastro_produto.html">Cadastrar Produtos</a>
+                <a href="meus_produtos.html">Meus Produtos</a>
+            </nav>
+            <hr>
+            <nav class="menuSection" aria-label="Geral">
+                <h4 class="sectionTitle">Geral</h4>
+                <a href="favoritos.html">Favoritos</a><br>
+                <a href="favoritos.html">Chats</a><br>
+                <a href="favoritos.html">Pesquisas</a><br>
+                <a href="../../index.html" target="_self">Sair</a>
+            </nav>
+        </aside>
     </main>
-    <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="homePage.html" target="_self"><i class="fa-solid fa-house botaoVoltar"></i></a>
-    </footer>
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
 </body>
 </html>

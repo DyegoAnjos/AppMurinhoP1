@@ -19,45 +19,115 @@ main{
     margin-top: 5.3rem;
 } 
 
-#clusterPerfil {
+#menuSidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 260px;
+    max-width: 80%;
+    background-color: var(--cor-fundo, #ffffff);
+    box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+    padding: 1rem;
+    box-sizing: border-box;
+    transform: translateX(-110%);
+    transition: transform 240ms ease, visibility 240ms ease;
+    z-index: 1200;
+    overflow-y: auto;
+    font-size: 0.95rem;
+}
+
+/* visibilidade do menu */
+#menuSidebar.open,
+#menuSidebar[aria-hidden="false"]{
+    transform: translateX(0);
+}
+
+/* isso vai ser pro botao pra fechar/abrir */
+.menuClose{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--cor-preto, #222);
+    cursor: pointer;
+    line-height: 1;
+}
+
+#clusterPerfil{
     display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: .5rem;
     
-    img{
-    width: 15%;
-    border-radius: 100%;
-    }
-    
-    a{
-      color: var(--cor-apoio);
-    }
 }
 
-.clusterPerfil {
-    margin: .5rem;
+#clusterPerfil .fotoPerfil{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
-.clusterNome {
+.clusterInfo p{
+    margin: 0;
+    font-weight: 700;
+    color: var(--cor-principal, #0077b6);
+    font-size: 0.95rem;
+}
+.clusterInfo a{
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.botaoNotificacao{
+    margin-left: auto;
+    color: var(--cor-preto);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+}
+
+.menuSection{
+    padding: 0.25rem 0;
+}
+.sectionTitle{
+    margin: 0 0 0.35rem 0;
+    font-size: 0.9rem;
     color: var(--cor-principal);
 }
 
-#cluster {
-    margin-left: .5rem;
-    color: var(--cor-preto);    
-    
-    a {
-      gap: 0.5rem;
-      line-height: 2.5rem;
-    }
+#menuSidebar a{
+    display: block;
+    padding: 0.35rem 0.25rem;
+    text-align: justify;
+    color: var(--cor-apoio);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 120ms ease;
+    font-size: 0.92rem;
 }
 
-hr {
-    width: 100%;
+#menuSidebar a:hover{
+    background: rgba(0,0,0,0.04);
 }
 
-.botaoNotificacao {
-    width: 2.5rem;
-    text-align: center;
+#menuSidebar hr{
+    border: none;
+    height: 1px;
+    background: rgba(0,0,0,0.06);
+    margin: 0.6rem 0;
 }

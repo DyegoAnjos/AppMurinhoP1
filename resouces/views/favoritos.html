@@ -19,56 +19,46 @@
             <a href="http://"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
-    <main>
+    <main>        
+        <form action="homePage.html" method="get">
+            <label>
+                <input type="text" class="inputPesquisar" placeholder="Pesquisar entre favoritos..." required>
+                <button type="submit" class="botaoBusca"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+        </form>
 
-        <textarea name="barraPesquisa" id="barraPesquisa" placeholder="Buscar..."></textarea>
+        <h1>Favoritos</h1><br>
+
         <div id="produtosContainer">
-            <a href="produtoCrocheMia.html" target="_self" rel="noopener noreferrer" class="exibicao"><img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem do Post"></a>
-            <a href="produtoCrocheMia.html" target="_self" rel="noopener noreferrer" class="exibicao"><img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem do Post"></a>
-            <a href="produtoCrocheMia.html" target="_self" rel="noopener noreferrer" class="exibicao"><img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem do Post"></a>
+            <a href="vendedor.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem de um gato usando touca">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Toucas para gatinhos</p>
+                    <p class="preco">R$ 49,99</p>
+                    <p class="botaoFavoritar"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a>
+            <a href="vendedor.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem de um gato usando touca">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Toucas para gatinhos</p>
+                    <p class="preco">R$ 49,99</p>
+                    <p class="botaoFavoritar"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a>
+
+            <a href="vendedor.html" class="exibicao" target="_self" rel="noopener noreferrer">
+                <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem de um gato usando touca">
+                <div class="produtoInfo">
+                    <p class="nomeProduto">Toucas para gatinhos</p>
+                    <p class="preco">R$ 49,99</p>
+                    <p class="botaoFavoritar"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a>
         </div>
 
-        <!-- <div id="containerPosts">
-            <div class="post">
-                <div class="postCabecalho">
-                    <a href="perfil_user.html" target="_self"><img src="https://images.pexels.com/photos/16282655/pexels-photo-16282655.jpeg" alt="Vendedor">CrochêMia</a>
-                    <a href="compartilhar.html" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
-                    <a href="denunciar.html" target="_self" class="botaoDenunciar"><i class="fa-solid fa-flag"></i></a>
-                </div>
-                <a href="produtoCrocheMia.html" target="_self" class="FotoProduto"><img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Imagem do Poste"></a>
-                <p class="nomeProduto">Toucas para gatinhos</p>
-                <div class="postRodape">
-                    <button type="button" class="botaoFavoritar"><i class="fa-regular fa-heart"></i></button>
-                    <p class="preco">R$ 99,99</p>
-                    <i class="fa-solid fa-money-bill formaPagamento"></i>
-                </div>
-            </div>
-        </div> -->
     </main>
     
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Seleciona o botões de favoritar
-            const botoesFavoritar = document.querySelectorAll('.botaoFavoritar');
-            
-            botoesFavoritar.forEach(function(botao) {
-                botao.addEventListener('click', function() {
-                    const icone = this.querySelector('i');
-                    
-                    // Verifica se o ícone está vazio (fa-regular) ou preenchido (fa-solid)
-                    if (icone.classList.contains('fa-regular')) {
-                        // Muda para coração preenchido
-                        icone.classList.remove('fa-regular');
-                        icone.classList.add('fa-solid');
-                    } else {
-                        // Muda para coração vazio
-                        icone.classList.remove('fa-solid');
-                        icone.classList.add('fa-regular');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>

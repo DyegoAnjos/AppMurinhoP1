@@ -72,7 +72,7 @@ main {
     max-width: 600px;
 }
 
-.botaoEditar,
+.botaoEditar, .botaoMensagem,
 .botaoCadastrarProduto {
     display: inline-block;
     margin-left: 2rem;
@@ -88,22 +88,18 @@ main {
     box-shadow: 0px 0px 3px 3px;
 }
 
-
-.botaoEditar{
-    text-align: center;
-    width: 40%;
-    min-width: 6rem;
-}
-
-.botaoCadastrarProduto {
-    background: var(--cor-fundo);
-    margin-left: 1rem;
-}
 .botaoEditar:hover {
-    background: var(--cor-preto);
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
 }
 .botaoCadastrarProduto:hover {
-    background:var(--cor-preto);
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
+}
+
+.botaoMensagem:hover {
+    background: var(--cor-apoio);
+    color: var(--cor-fundo);
 }
 
 #produtosContainer {
