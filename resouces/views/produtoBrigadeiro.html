@@ -5,40 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="../../public/css/produtoSelecionado_style.css">
-    <title>Document</title>
+    <title>Brigadeiros</title>
 </head>
 <body>
-    <header id="cabecalhoIntermediario">
+    <header>
         <img src="../../public/img/Logo.png" alt="Logo" id="logo">
-        <h1>Produtos</h1>
-        <a href="homePage.html" target="_self"><i class="fa-solid fa-x botaoVoltar"></i></a>
+        <nav>
+            <a href="http://">Home</a>
+            <a href="http://">Pesquisar</a>
+            <a href="http://">Calendário</a>
+            <a href="http://">Favoritos</a>
+            <a href="http://">Logar/Cadastrar</a>
+            <a href="http://"><i class="fa-solid fa-bars"></i></a>
+        </nav>
     </header>
     <main>
-        <div id="subCabecalho">
-            <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Produto">
-            <a href="compartilhar.html" target="_blank"><i class="fa-solid fa-share-nodes"></i></a>
+        <div id="cardProdutoSelecionado">
+            <div id="fotoProduto">
+                <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Produto">
+            </div>
+            <div id="dadosProduto">
+                <p class="nomeProduto">Brigadeiros</p>
+                <p><a href="perfil_user.html" target="_self"><img src="../../public/img/Foto_Perfil.png" alt="Vendedor">Maria Andrade</a>
+                <button type="button" class="botaoFavoritar"><i class="fa-regular fa-heart"></i></button>
+                <a href="compartilhar.html" target="_blank"><i class="fa-solid fa-share-nodes"></i></a> <!--depois transofrmar isso num alert com "link copiado"--></p>
+                <p id="pagamento">R$ 2,00<i class="fa-solid fa-money-bill formaPagamento" title="Dinheiro"></i></p>
+                <p id="descricao">
+                Uma caixinha com seis unidades de brigadeiros cobertos com granulados coloridos. Minha caixinha fica no murinho!
+                </p>
+                <h2>Avaliação</h2>
+                <p>Nota:
+                <select name="nota" id="notas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></p>
+                <textarea name="comentario" id="caixa_avaliação"></textarea>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+            </div>
         </div>
-        <p class="nomeProduto">Brigadeiros</p>
-        <div id="subCorpo">
-            <a href="perfil_user.html" target="_self"><img src="../../public/img/Foto_Perfil.png" alt="Vendedor">Maria Andrade</a>
-            <nav>
-                <a href="chatCrocheMia.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-            </nav>
-            <button type="button" class="botaoFavoritar"><i class="fa-regular fa-heart"></i></button>
-            <p id="pagamento">R$ 2,00<i class="fa-solid fa-money-bill formaPagamento" title="Dinheiro"></i></p>
+        <div id="avaliacoes">
+            <h2>Avaliações</h2>
+            <div class="avaliado">
+                <p>Nota: 5</p>
+                <p class="comentario">Comentário sobre como o brigadeiro é top</p>
+            </div>
+
         </div>
-        <p id="descricao">
-            Uma caixinha com seis unidades de brigadeiros cobertos com granulados coloridos. Minha caixinha fica no murinho!
-        </p>
-        <a href="verAvaliacoes.html" target="_self" id="verAvaliações">Ver avaliações</a>
+        
+        
     </main>
-    <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
-    </footer>
+
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
 </body>
 </html>

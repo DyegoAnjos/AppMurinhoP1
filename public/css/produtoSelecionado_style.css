@@ -1,4 +1,4 @@
-main{
+main {
     margin-top: 6rem;
     width: 100%;
     min-height: 70vh;
@@ -10,17 +10,9 @@ main{
     margin-bottom: 10rem;
 }
 
-#subCabecalho{
-    width: 100%;
-    position: relative;
-    img{
-        width: 100%;
-    }   
-}
-
-#subCabecalho i{
-    position: absolute;
-    z-index: 0;
+#cardProdutoSelecionado i {
+    /* position: absolute;
+    z-index: 0; */
     right: 1rem;
     top: 1rem;
     background-color: var(--cor-fundo);
@@ -29,99 +21,116 @@ main{
     border-radius: 5rem;
 }
 
-#subCorpo{
+#cardProdutoSelecionado {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding: .5rem;
-    gap: 1rem;
-
-    img{
-        width: 30%;
-        border-radius: 3rem;
-    }
-
-    a{
-        width: 40%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-
-    nav{
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a{
-            width: 20%;
-            align-items: center;
-        }
-    }
-
-    i{
-        font-size: 2rem;
-    }
-
-    button{
-        width: 40%;
-        background: none;
-        border: none;
-    }
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 1100px;
+    box-sizing: border-box;
 }
 
-.formaPagamento{
-    width: 40%;
-    text-align: center;
+#cardProdutoSelecionado > #fotoProduto {
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+#cardProdutoSelecionado > #fotoProduto img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    display: block;
 }
 
-.nomeProduto{
+#cardProdutoSelecionado > #dadosProduto {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+#cardProdutoSelecionado a {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#cardProdutoSelecionado button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Texto e blocos internos */
+.nomeProduto {
     text-align: center;
     background-color: var(--cor-apoio);
-    padding: .5rem;
-    font-size: 2rem;
-    border-radius: 2rem;
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    display: inline-block;
 }
 
-#pagamento{
-    width: 50%;
+#pagamento {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: .5rem;
+    margin-top: .25rem;
 }
 
-#descricao{
-    width: 80%;
-    text-align: center;
-    margin-top: 2rem;
+.formaPagamento {
+    margin-left: .5rem;
+    font-size: 1.1rem;
+}
+
+#descricao {
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
     border: solid 3px var(--cor-apoio);
     padding: 1rem;
     border-radius: 1rem;
+    box-sizing: border-box;
 }
 
-#verAvaliações{
-    width: 40%;
-    min-width: 6rem;
-    height: 2rem;
-
-    background-color: var(--cor-fundo);
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0px 0px 3px 3px;
-    transition: .1s;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+/* Avaliações: ocupar linha inteira abaixo das duas colunas */
+#cardProdutoSelecionado > #avaliacoes {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    box-sizing: border-box;
 }
 
-.verAvaliações:hover{
-    transition: .1s;
-    background-color: var(--cor-apoio);
-    border: solid 3px var(--cor-fundo);
+#cardProdutoSelecionado > #avaliacoes .avaliado {
+    border-top: 1px solid rgba(0,0,0,.08);
+    padding: .5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    #cardProdutoSelecionado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cardProdutoSelecionado > #fotoProduto,
+    #cardProdutoSelecionado > #dadosProduto {
+        flex-basis: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nomeProduto { text-align: center; }
+    #descricao { text-align: center; }
 }
