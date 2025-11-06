@@ -19,132 +19,44 @@ html{
 }
 
 body{
-    width: 412px;
+    width: 100%;
 }
 
-/* Cabeçalho */
-header{
-    width: 100%;
-    height: 10%;
-    background-color: var(--cor-principal);
 
+header{
+    background-color: var(--cor-principal);
+    width: 100%;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-    padding: 3rem;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
-header a{
+header nav{
+    width: 30%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header img{
-    width: 150%;
-}
-
-#logo{
-    width: 20%;
-    background-color: var(--cor-fundo);
-    border-radius: 1rem;
-}
-
-nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-    gap: 1.5rem;
+    align-items: center;
 }
 
 nav a{
-    width: 4rem;
-    height: 4rem;
-
+    min-width: 20%;
+    color: var(--cor-apoio);
     background-color: var(--cor-fundo);
-    font-size: 2rem;
-    border-radius: 5rem;
-}
-
-nav img{
-    width: 100%;
-}
-
-/* Cabeçalho Intermediário */
-#cabecalhoIntermediario{
-    width: 100%;
-    height: 10%;
-    background-color: var(--cor-principal);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 3rem;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-}
-
-#cabecalhoIntermediario a{
-    width: 100%;
-    font-size: 2rem;
-    background-color: var(--cor-fundo);
-    border-radius: 5rem;
-}
-
-#cabecalhoIntermediario a i{
-    margin: 1rem;
-}
-
-h1{
-    background-color: var(--cor-fundo);
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: .5rem;
+    border-radius: .2rem;
+    transition: .5s;
     text-align: center;
 }
 
-/* Rodapé */
-footer{
-    width: 100%;
-    height: 10%;
-    background-color: var(--cor-principal);
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    padding: 1rem;
-    gap: 1rem;
+nav a:hover{
+    color: var(--cor-fundo);
+    background-color: var(--cor-apoio);
+    transition: .5s;
 }
 
-footer a{
-    background-color: var(--cor-fundo);
-    width: 5rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-#menuSelecionado{
-    font-size: 2rem;
-    width: 7rem;
-    height: 5.5rem;
-    margin-bottom: 1rem;
-    border: solid .5rem var(--cor-principal);
+#logo{
+    width: 4%;
 }
