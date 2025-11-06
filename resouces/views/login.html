@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/login_style.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../public/css/login_style.css">
     <title>Login</title>
 </head>
 <body>
     <header id="cabecalhoIntermediario">
-        <img src="public/img/Logo.png" alt="Logo" id="logo">
+        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
     </header>
     <main>
-        <form action="resources/views/homePage.html" method="get">
+        <form action="homePage.html" method="get">
             <h1>Login</h1>
-            <label>
-                Email: <input type="email"placeholder="user@gmail.com" required>
-            </label>
-            <label>
-                Senha: <input type="password" required>
-                <i class="fa-solid fa-eye"></i>
-                <i class="fa-solid fa-eye-slash escondido"></i>
-            </label>
-            <button type="submit">Entrar</button>
-            <div id="outrosLogos">
-                <img src="https://logopng.com.br/logos/google-37.png" alt="Google">
-                <img src="https://th.bing.com/th/id/R.9644757829cb70f677d9c62b78350d92?rik=rZ2xj0nwoT%2b%2bjQ&pid=ImgRaw&r=0" alt="Facebook">
+            <div id="campos">
+                <label>
+                    Email: <input type="email"placeholder="user@gmail.com" required>
+                </label>
+                <label>
+                    Senha: <input type="password" required>
+                    <i class="fa-solid fa-eye"></i>
+                 <i class="fa-solid fa-eye-slash escondido"></i>
+                </label>    
             </div>
-            <a href="resources/views/cadastra.html" target="_self" rel="noopener noreferrer">Não tem uma conta? Crie já!</a>
+            
+            <button type="submit">Entrar</button>
+            <a href="cadastra.html" target="_self" rel="noopener noreferrer">Não tem uma conta? Crie já!</a>
         </form> 
     </main>
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>

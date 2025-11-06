@@ -1,25 +1,40 @@
 main{
-    margin-top: 50%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 h1{
+    color: var(--cor-fundo);
     width: 100%;
+    font-size: 3rem;
 }
 
 form{
     background-color: var(--cor-principal);
-    width: 80%;
-    height: 100%;
+    margin-top: 5%;
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 2rem;
     padding: 2rem;
+    text-align: center;
+}
+
+#campos{
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    border-radius: 3rem;
+    gap: 4rem;
 }
 
 label{
@@ -34,47 +49,72 @@ label{
 }
 
 input{
-    background-color: var(--cor-fundo);
     min-width: 200px;
     height: 2rem;
-    border-radius: 5rem;
-    border: none;
     padding: 1rem;
-    
+    width: 20%;
+    color: var(--cor-apoio);
+    background-color: var(--cor-fundo);
+    padding: .5rem;
+    border-radius: .2rem;
+    transition: .5s;
+    border: none;
 }
 
 i{
+    width: 2rem;
+    height: 2rem;
+    padding-top: .5rem;
+    border-radius: .2rem;
+    background-color: var(--cor-fundo);
+    color: var(--cor-apoio);
+   
+    text-align: center;
+    
+
     position: absolute;
     z-index: 1;
-    right: 5%;
+    right: 9%;
+    transition: .5s;
 }
+
+i:hover{
+    color: var(--cor-fundo);
+    background-color: var(--cor-apoio);
+    transition: .5s;
+}
+
 
 .escondido{
     visibility: hidden;
 }
 
 button{
-    width: 40%;
-    min-width: 6rem;
-    height: 2rem;
-
+    min-width: 8rem;
+    width: 20%;
+    color: var(--cor-apoio);
     background-color: var(--cor-fundo);
+    padding: .5rem;
+    border-radius: .2rem;
+    transition: .5s;
+    text-align: center;
     border: none;
-    border-radius: 5rem;
-    box-shadow: 0px 0px 3px 3px;
-    transition: .1s;
 }
 
 button:hover{
-    transition: .1s;
+    color: var(--cor-fundo);
     background-color: var(--cor-apoio);
-    border: solid 3px var(--cor-fundo);
+    transition: .5s;
 }
 
 a{
-    color: var(--cor-apoio);
+    color: var(--cor-fundo);
     font-weight: bold;
     text-decoration: underline;
+}
+
+a:hover{
+    color: var(--cor-apoio);
 }
 
 #outrosLogos{
