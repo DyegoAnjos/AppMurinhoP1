@@ -57,6 +57,18 @@ nav a:hover{
     transition: .5s;
 }
 
+nav a:last-child{
+    min-width: 6%;
+}
+
+a i{
+     color: var(--cor-principal);
+}
+
+a i:hover{
+     color: var(--cor-fundo);
+}
+
 #logo{
     width: 4%;
 }
