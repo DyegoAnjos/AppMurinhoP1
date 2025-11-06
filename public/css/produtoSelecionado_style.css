@@ -1,0 +1,127 @@
+main{
+    margin-top: 6rem;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0;
+    margin-bottom: 10rem;
+}
+
+#subCabecalho{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }   
+}
+
+#subCabecalho i{
+    position: absolute;
+    z-index: 0;
+    right: 1rem;
+    top: 1rem;
+    background-color: var(--cor-fundo);
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+}
+
+#subCorpo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    gap: 1rem;
+
+    img{
+        width: 30%;
+        border-radius: 3rem;
+    }
+
+    a{
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    nav{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            width: 20%;
+            align-items: center;
+        }
+    }
+
+    i{
+        font-size: 2rem;
+    }
+
+    button{
+        width: 40%;
+        background: none;
+        border: none;
+    }
+}
+
+.formaPagamento{
+    width: 40%;
+    text-align: center;
+}
+
+.nomeProduto{
+    text-align: center;
+    background-color: var(--cor-apoio);
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+#pagamento{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#descricao{
+    width: 80%;
+    text-align: center;
+    margin-top: 2rem;
+    border: solid 3px var(--cor-apoio);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#verAvaliações{
+    width: 40%;
+    min-width: 6rem;
+    height: 2rem;
+
+    background-color: var(--cor-fundo);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 3px 3px;
+    transition: .1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.verAvaliações:hover{
+    transition: .1s;
+    background-color: var(--cor-apoio);
+    border: solid 3px var(--cor-fundo);
+}

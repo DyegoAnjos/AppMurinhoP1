@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: justify;
+}
+
+main{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 1rem 0 1rem 0;
+    gap: 0.7rem;
+    margin-bottom: 10rem;
+    background-color: var(--cor-fundo);
+    font-size: 1.2rem;
+    margin-top: 5.3rem;
+} 
+
+#clusterPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: .5rem;
+    
+    img{
+    width: 15%;
+    border-radius: 100%;
+    }
+    
+    a{
+      color: var(--cor-apoio);
+    }
+}
+
+.clusterPerfil {
+    margin: .5rem;
+}
+
+.clusterNome {
+    color: var(--cor-principal);
+}
+
+#cluster {
+    margin-left: .5rem;
+    color: var(--cor-preto);    
+    
+    a {
+      gap: 0.5rem;
+      line-height: 2.5rem;
+    }
+}
+
+hr {
+    width: 100%;
+}
+
+.botaoNotificacao {
+    width: 2.5rem;
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+main{
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    width: 100%;
+}
+
+form{
+    background-color: var(--cor-principal);
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 3rem;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    text-align: left;
+}
+
+input{
+    background-color: var(--cor-fundo);
+    min-width: 200px;
+    height: 2rem;
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem;
+    
+}
+
+i{
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+}
+
+.escondido{
+    visibility: hidden;
+}
+
+button{
+    width: 40%;
+    min-width: 6rem;
+    height: 2rem;
+
+    background-color: var(--cor-fundo);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 3px 3px;
+    transition: .1s;
+}
+
+button:hover{
+    transition: .1s;
+    background-color: var(--cor-apoio);
+    border: solid 3px var(--cor-fundo);
+}
+
+a{
+    color: var(--cor-apoio);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#outrosLogos{
+    background-color: var(--cor-fundo);
+    width: 60%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3rem;
+}
+
+img{
+    width: 10%;
+}

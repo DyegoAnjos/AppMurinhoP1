@@ -1,0 +1,185 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    gap: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+main img{
+    width: 10%;
+}
+
+#containerAtualizacoes{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: scroll;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 6px 5px;
+}
+
+#containerAtualizacoes a{
+    width: 5rem;
+}
+
+.fotoAtualizacao{
+    width: 5rem;
+    border-radius: 10rem;
+    border: solid 5px var(--cor-apoio);
+}
+
+.botaoAdicionar{
+    width: 4.5rem;
+    background-color: var(--cor-fundo);
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 10rem;
+    border: solid 5px var(--cor-apoio);
+}
+
+#subCabecalho{
+    text-align: center;
+    background-color: var(--cor-principal);
+    padding: .5rem;
+    border-radius: 10rem;
+}
+
+/* Estilo dos Posts */
+#containerPosts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 0;
+    gap: .5rem;
+}
+
+.post img{
+    width: 100%;
+}
+
+.postCabecalho{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: .5rem;
+}
+
+.postCabecalho a{
+    display: flex;
+    align-items: start;
+    gap: .3rem;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+    margin:  0 1rem;
+}
+
+.postCabecalho a img{
+    border-radius: 100%;
+}
+
+.postCabecalho img{
+    width: 15%;
+}
+
+.postCabecalho .pontos{
+    width: 100%;
+    background: none;
+    border: none;
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+.popupOpcoes{
+    background-color: var(--cor-principal);
+    position: absolute;    
+    z-index: 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    top: 2rem;
+    right: 3rem;
+    gap: .3rem;
+}
+
+.popupOpcoes a{
+    width: 100%;
+    text-align: center;
+}
+
+.botaoDenunciar i{
+    color: red;
+}
+
+.popupOpcoes a:last-child{
+    border-top: solid 1px var(--cor-preto);
+}
+
+.nomeProduto{
+    text-align: center;
+    background-color: var(--cor-apoio);
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+.postRodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botaoFavoritar{
+    width: 6%;
+    background: none;
+    border: none;
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+.preco{
+    font-size: 1.5rem;
+}
+
+.postRodape .formaPagamento{
+    font-size: 1.5rem;
+}
