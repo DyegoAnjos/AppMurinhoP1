@@ -8,18 +8,8 @@
     <title>Notificações</title>
 </head>
 <body>
-    <header>
-        <a href="../../index.html"><img src="../../public/img/Logo.png" alt="Logo" id="logo"></a>
-        <nav>
-            <a href="homePage.html">Home</a>
-            <a href="pesquisar.html">Pesquisar</a>
-            <a href="calendario.html">Calendário</a>
-            <a href="favoritos.html">Favoritos</a>
-            <a href="login.html">Logar/Cadastrar</a>
-            <a href="menu_bar.html"><i class="fa-solid fa-bars"></i></a>
-        </nav>
-    </header>
     <main>
+    <aside class="open" aria-hidden="true">
         <div class="secoes">
             <h2 class="tituloSecao">Hoje</h2>
             <div class="notificacao">
@@ -30,23 +20,39 @@
                     Chegou novos produtos fresquinhos
                 </p>
             </div>
+            <div class="notificacao">
+                <p class="horario">
+                    00:00
+                </p>
+                <p class="texto">
+                    CrochêMia está vendendo algo de novo, venha ver!
+                </p>
+            </div>
         </div>
         <div class="secoes">
             <h2 class="tituloSecao">Ontem</h2>
-            <p class="notificacao">Nova encomenda recebida! Veja seus <a href="encomendas_recebidas.html" target="_self">Pedidos de Encomendas</a>.</p>
+            <div class="notificacao">
+                <p class="horario">
+                    01:00
+                </p>
+                <p class="texto">
+                    50 pessoas visualizaram seus produtos hoje
+                </p>
+            </div>
         </div>
         <div class="secoes">
             <h2 class="tituloSecao">Últimos 7 dias</h2>
-            <p class="notificacao">Nenhuma notificação nesse período.</p>
+            <div class="notificacao">
+                <p class="horario">
+                    10:00
+                </p>
+                <p class="texto">
+                    Bem vinda ao DigiMuro UNIRIO 3
+                </p>
+            </div>
         </div>
+    </aside>
     </main>
-    <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
-    </footer>
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
 </body>
 </html>
