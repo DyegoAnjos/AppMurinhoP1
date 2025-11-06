@@ -21,6 +21,7 @@ main{
 
 .secoes{
   font-size: 1.5rem;
+  min-width: 40%;
   padding: 1.2rem;
   justify-content: space-evenly;
 }
@@ -32,15 +33,25 @@ main{
 }
 
 .notificacao {
-      font-size: 1.2rem;
-      text-align: justify;
-      line-height: 1.2rem;
-      background: #fff;
-      border-radius: 1.2rem;
-      margin-bottom: 2rem;
-      padding: 1rem;
-      
-      a {
-        color: var(--cor-apoio);
-      }
+    background-color: var(--cor-principal);
+    
+    font-size: 1.2rem;
+    text-align: justify;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto{
+  color: var(--cor-fundo);
+}
+
+.horario{
+  background-color: var(--cor-fundo);
+  padding: .2rem;
+  border-radius: .1rem;
 }
