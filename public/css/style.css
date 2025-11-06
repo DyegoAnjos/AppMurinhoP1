@@ -35,14 +35,16 @@ header{
 }
 
 header nav{
-    width: 30%;
+    min-width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
 }
 
 nav a{
-    min-width: 20%;
+    min-width: 8rem;
+    width: 20%;
     color: var(--cor-apoio);
     background-color: var(--cor-fundo);
     padding: .5rem;
@@ -58,7 +60,8 @@ nav a:hover{
 }
 
 nav a:last-child{
-    min-width: 6%;
+    min-width: 3rem;
+    width: 5%;
 }
 
 a i{
