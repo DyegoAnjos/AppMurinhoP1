@@ -34,6 +34,8 @@ header{
     padding: 0 2rem;
 }
 
+
+
 header nav{
     min-width: 50%;
     display: flex;
@@ -42,7 +44,7 @@ header nav{
     gap: 1rem;
 }
 
-nav a{
+nav button{
     min-width: 8rem;
     width: 20%;
     color: var(--cor-apoio);
@@ -51,25 +53,37 @@ nav a{
     border-radius: .2rem;
     transition: .5s;
     text-align: center;
+    border: none;
 }
 
-nav a:hover{
+nav button:hover{
     color: var(--cor-fundo);
     background-color: var(--cor-apoio);
     transition: .5s;
 }
 
-nav a:last-child{
+nav button:last-child{
     min-width: 3rem;
     width: 5%;
 }
 
-a i{
+button i{
      color: var(--cor-principal);
 }
 
-a i:hover{
+button i:hover{
      color: var(--cor-fundo);
+}
+
+#botaoPrincipal{
+    border: none;
+    width: 4%;
+    background: none;
+
+    #logo{
+        width: 100%;
+    }
+
 }
 
 #logo{
