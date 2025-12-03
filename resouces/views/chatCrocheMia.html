@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/style.css">
-    <link rel="stylesheet" href="../../public/css/chat.style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../public/css/chatStyle.css">
+    <title>Chats</title>
 </head>
 <body>
     <header>
-        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
+        <button type="button" id="botaoPrincipal"><img src="../../public/img/Logo.png" alt="Logo" id="logo"></button>
         <nav>
-            <a href="http://">Home</a>
-            <a href="http://">Pesquisar</a>
-            <a href="http://">Calendário</a>
-            <a href="http://">Favoritos</a>
-            <a href="http://">Logar/Cadastrar</a>
-            <a href="http://"><i class="fa-solid fa-bars"></i></a>
+            <button type="button" class="botaoMenu">Home</button>
+            <button type="button" class="botaoMenu">Pesquisar</button>
+            <button type="button" class="botaoMenu">Calendário</button>
+            <button type="button" class="botaoMenu">Favoritos</button>
+            <button type="button" class="botaoMenu">Logar/Cadastrar</button>
+            <button type="button" id="botaoMenuLateral"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
+
     <main>
-        <div id="subcabecalho">
-            <div class="infos">
-                <img src="https://images.pexels.com/photos/16282655/pexels-photo-16282655.jpeg" alt="FotoAtualizacao" class="fotoVendedor">
-                <p class="nomeVendedor">CrochêMia</p>    
-            </div>
-            
-            <a href="compartilhar.html" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
-            <a href="denunciar.html" target="_self" class="botaoDenunciar"><i class="fa-solid fa-flag"></i></a>
+        <div class="chatWrapper">
+            <!-- lista de conversas -->
+            <aside class="listaChats" aria-label="Conversas">
+                <div class="chatItem">
+                    <img src="https://images.pexels.com/photos/16282655/pexels-photo-16282655.jpeg" alt="avatar">
+                    <div class="meta">
+                        <div class="nome">CrochêMia</div>
+                        <div class="ultima">Vish. Boa sorte guerr...</div>
+                    </div>
+                </div>
+                <div class="chatItem">
+                    <img src="https://paradepets.com/.image/c_fill,w_1200,h_1200,g_faces:center/NTowMDAwMDAwMDAwMTI0NDYz/sleepy-kitten.jpg" alt="avatar">
+                    <div class="meta">
+                        <div class="nome">Vendedor Misterioro</div>
+                        <div class="ultima">Mensagem misteriosa...</div>
+                    </div>
+                </div>
+                <div class="chatItem">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="avatar">
+                    <div class="meta">
+                        <div class="nome">Outro vendedor</div>
+                        <div class="ultima">Tudo joia? Hoje eu...</div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- conversa selecionada -->
+            <section class="chatArea">
+                <div id="subcabecalho">
+                    <div class="infos">
+                        <img src="https://images.pexels.com/photos/16282655/pexels-photo-16282655.jpeg" alt="FotoAtualizacao" class="fotoVendedor">
+                        <p class="nomeVendedor">CrochêMia</p>
+                    </div>
+                </div>
+
+                <div class="corpoChat">
+                    <p class="balaoCliente">Oi Mia tudo bem</p>
+                    <p class="balaoVendedor">Oi Gabi, tudo ótimo</p>
+                    <p class="balaoCliente">Quando vai dar para fazer mais roupas de gato?</p>
+                    <p class="balaoVendedor">Vou conseguir por volta do dia 25, tenho trabalho de IHC.</p>
+                    <p class="balaoCliente">Vish. Boa sorte guerreira</p>
+                </div>
+
+                <div class="enviarMensagem">
+                    <input type="text" id="mensagem" placeholder="Escreva uma mensagem">
+                    <button type="submit"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
+            </section>
         </div>
-        <div class="corpoChat">
-            <p class="balaoCliente">Oi Mia tudo bem</p>
-            <p class="balaoVendedor">Oi Gabi, tudo ótimo</p>
-            <p class="balaoCliente">Quando vai dar para fazer mais roupas de gato?</p>
-            <p class="balaoVendedor">Oi Gabi. vou conseguir fazer por volta do dia 25, tenho trabalho de IHC.</p>
-            <p class="balaoCliente">Vish. Boa sorte guerreira</p>
-            <div class="enviarMensagem">
-                <input type="text" id="mensagem">
-                <button type="submit"><i class="fa-solid fa-caret-right"></i></button>
-            </div>
-        </div>
-        
     </main>
-    <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
-    </footer>
+
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+        <script src="../../public/js/script.js"></script>
 </body>
 </html>

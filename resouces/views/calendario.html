@@ -9,38 +9,152 @@
 </head>
 <body>
     <header>
-        <img src="../../public/img/Logo.png" alt="Logo" id="logo">
+        <button type="button" id="botaoPrincipal"><img src="../../public/img/Logo.png" alt="Logo" id="logo"></button>
         <nav>
-            <a href="http://">Home</a>
-            <a href="http://">Pesquisar</a>
-            <a href="http://">Calendário</a>
-            <a href="http://">Favoritos</a>
-            <a href="http://">Logar/Cadastrar</a>
-            <a href="http://"><i class="fa-solid fa-bars"></i></a>
+            <button type="button" class="botaoMenu">Home</button>
+            <button type="button" class="botaoMenu">Pesquisar</button>
+            <button type="button" class="botaoMenu">Calendário</button>
+            <button type="button" class="botaoMenu">Favoritos</button>
+            <button type="button" class="botaoMenu">Logar/Cadastrar</button>
+            <button type="button" id="botaoMenuLateral"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main>
-        
-        <table>
-            <tr><th colspan="7">Clique no horário</th></tr>
-            <tr><th></th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th></tr>
-            <tr><th>08:00</th><td><a href="homePage.html" target="_self">2</a></td>   <td></td>   <td></td>   <td></td>   <td><a href="homePage.html" target="_self">5</a></td>  </tr>
-            <tr><th>10:00</th><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><th>12:00</th><td><a href="homePage.html" target="_self">2</a></td>  <td></td>  <td></td>  <td></td>  <td></td>   </tr>
-            <tr><th>14:00</th><td><a href="homePage.html" target="_self">3</a></td><td></td><td></td><td><a href="homePage.html" target="_self">4</a></td><td></td></tr>
-            <tr><th>16:00</th><td></td><td></td><td></td><td></td><td></td></tr>
-            <tr><th>18:00</th><td></td><td><a href="homePage.html" target="_self">12</a></td><td></td><td><a href="homePage.html" target="_self">4</a></td><td></td></tr>
-            <tr><th>20:00</th><td><a href="homePage.html" target="_self">2</a></td><td></td><td></td><td></td><td></td></tr>
-            <tr><th>22:00</th><td></td><td></td><td><a href="homePage.html" target="_self">2</a></td><td></td><td></td></tr>
-        </table>
+        <div class="dia">
+            <h2>SEGUNDA</h2>
+            <div class="horarios">
+                <a class="cardProduto" href="produtoBrigadeiro.html">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Brigadeiros da Mari</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-solid fa-money-bill iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>08:00</p>
+                            <p>-</p>
+                            <p>12:00</p>
+                        </div>
+                    </div>
+                </a>
+               
+            </div>
+        </div>
+        <div class="dia">
+            <h2>TERÇA</h2>
+            <div class="horarios">
+                <a class="cardProduto" href="produtoBrigadeiro.html">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Brigadeiros da Mari</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-solid fa-money-bill iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>08:00</p>
+                            <p>-</p>
+                            <p>12:00</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="cardProduto" href="produtoToucaGatos.html">
+                    <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Touca para gatos</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-brands fa-pix iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>12:00</p>
+                            <p>-</p>
+                            <p>14:00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="dia">
+            <h2>QUARTA</h2>
+            <div class="horarios">
+                <a class="cardProduto" href="produtoBrigadeiro.html">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Brigadeiros da Mari</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-solid fa-money-bill iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>08:00</p>
+                            <p>-</p>
+                            <p>12:00</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        <div class="dia">
+            <h2>QUINTA</h2>
+            <div class="horarios">
+                <a class="cardProduto" href="produtoBrigadeiro.html">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Brigadeiros da Mari</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-solid fa-money-bill iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>08:00</p>
+                            <p>-</p>
+                            <p>12:00</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="cardProduto" href="produtoToucaGatos.html">
+                    <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Touca para gatos</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-brands fa-pix iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>12:00</p>
+                            <p>-</p>
+                            <p>14:00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="dia">
+            <h2>SEXTA</h2>
+            <div class="horarios">
+                <a class="cardProduto" href="produtoBrigadeiro.html">
+                    <img src="https://images.pexels.com/photos/6441136/pexels-photo-6441136.jpeg" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Brigadeiros da Mari</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-solid fa-money-bill iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>08:00</p>
+                            <p>-</p>
+                            <p>12:00</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="cardProduto" href="produtoToucaGatos.html">
+                    <img src="https://cf.shopee.com.br/file/85ab3ace738b3a8a6cd41e10b352b9a6" alt="Foto produto">
+                    <div class="textos">
+                        <p class="nomeProduto">Touca para gatos</p>
+                        <i class="fa-regular fa-heart favoritar"></i>
+                        <i class="fa-brands fa-pix iconePagamento"></i>
+                        <div class="rangeHorarios">
+                            <p>12:00</p>
+                            <p>-</p>
+                            <p>14:00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
-     <footer>
-        <a href="pesquisar.html" target="_self"><i class="fa-solid fa-magnifying-glass botaoPesquisar"></i></a>
-        <a href="selecionarChat.html" target="_self"><i class="fa-solid fa-comment botaoChat"></i></a>
-        <a href="calendario.html" target="_self" id="menuSelecionado"><p class="botaoData">SEG</p></a>
-        <a href="favoritos.html" target="_self"><i class="fa-solid fa-heart botaoFavoritos"></i></a>
-        <a href="menu_bar.html" target="_self"><i class="fa-solid fa-bars botaoMenuBar"></i></a>
-    </footer>
+        
+       
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+        <script src="../../public/js/script.js"></script>
 </body>
 </html>

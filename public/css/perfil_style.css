@@ -149,24 +149,3 @@ main {
     }
 }
 
-/* @media (max-width: 500px) {
-    .fotoPerfil {
-        left: 0.5rem;
-        width: 70px;
-        height: 70px;
-        top: 100px;
-    }
-    #nomeUsuario {
-        left: 80px;
-        top: 120px;
-        font-size: 1rem;
-    }
-    #descricaoUsuario {
-        margin-top: 60px;
-        margin-left: 0.5rem;
-        font-size: 0.95rem;
-    }
-    #produtosContainer {
-        grid-template-columns: 1fr;
-    }
-} */

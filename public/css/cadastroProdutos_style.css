@@ -166,24 +166,23 @@ textarea.descricao {
 }
 
 .botaoEditar {
-    text-align: center;
-    width: 60%;
-    min-width: 8rem;
-    height: 2.5rem;
-    background-color: var(--cor-fundo);
-    border: none;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 5rem;
+    border: none;
+    background-color: var(--cor-fundo);
     color: var(--cor-preto);
-    font-size: 1.1rem;
-    font-weight: 600;
-    box-shadow: 0px 0px 3px 3px;
+    font-size: 1rem;
+    text-decoration: none;
     transition: 0.1s;
-    margin: 2rem auto 0 auto;
-    display: block;
+    box-shadow: 0px 0px 3px 3px;
 }
 
 .botaoEditar:hover {
-    background: var(--cor-apoio);
+   background: var(--cor-apoio);
+color: var(--cor-fundo)
 }
 
 @media (max-width: 600px) {

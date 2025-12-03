@@ -117,6 +117,31 @@ main {
     padding: .5rem 0;
 }
 
+#fotoVendedor{
+    width: 10%;
+    border-radius: 100%;
+}
+
+.botao{
+display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--cor-fundo);
+    color: var(--cor-preto);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.1s;
+    box-shadow: 0px 0px 3px 3px;
+}
+
+.botao:hover{
+background: var(--cor-apoio);
+  color: var(--cor-fundo);
+}
+
 /* Responsividade */
 @media (max-width: 800px) {
     #cardProdutoSelecionado {

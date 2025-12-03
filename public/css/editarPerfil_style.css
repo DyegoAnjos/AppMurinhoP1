@@ -14,17 +14,23 @@ main{
 }
 
 .botaoEditar{
-    text-align: center;
-    padding-top: .5rem;
-    width: 40%;
-    min-width: 6rem;
-    height: 2rem;
-    background-color: var(--cor-fundo);
-    border: none;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 5rem;
+    border: none;
+    background-color: var(--cor-fundo);
+    color: var(--cor-preto);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.1s;
     box-shadow: 0px 0px 3px 3px;
-    transition: .1s;
-    margin: 2rem 0 0 0;
+}
+
+.botaoEditar:hover{
+  background: var(--cor-apoio);
+  color: var(--cor-fundo);
 }
 
 form{
@@ -48,7 +54,8 @@ form{
 }
 
 #texto{
-    border-radius: 5rem;
+    border-radius: 1rem;
+    padding: .5rem;
     text-align: center;
     background: var(--cor-fundo);
     border-color: var(--cor-apoio);
