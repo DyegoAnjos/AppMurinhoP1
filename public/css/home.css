@@ -21,67 +21,14 @@ h3{
     border-radius: .5rem;
     position: fixed;
     top: 10%;
+    z-index: 1500;
 }
 
-#containerPosts{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-    
-
-.post{
-    background-color: var(--cor-apoio);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-
-    width: 20%;
-    min-height: 30rem;
-    border-radius: 1rem;
-}
-
-.post img{
-    width: 60%;
-}
-
-.texto{
-    width: 100%;
-    min-height: 15rem;
-    height: 100%;
-    justify-content: start;
-    align-items: center;
-    
+#produtosContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "nomeProduto favoritar"
-        "precoProduto formaPagamento"
-    ;
-    font-size: 1.5rem;
-}
-
-.titulo{
-    grid-area: nomeProduto;
-}
-
-.favoritar{
-    grid-area: favoritar;
-}
-
-.valor{
-    grid-area: precoProduto;
-}
-
-.formaPagamento{
-    grid-area: formaPagamento;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
 }
