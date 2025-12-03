@@ -142,6 +142,10 @@ background: var(--cor-apoio);
   color: var(--cor-fundo);
 }
 
+.fa-heart:hover{
+    color: var(--cor-preto);
+}
+
 /* Responsividade */
 @media (max-width: 800px) {
     #cardProdutoSelecionado {
