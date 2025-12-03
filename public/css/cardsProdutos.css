@@ -67,3 +67,7 @@
     font-weight: 700;
     color: var(--cor-fundo)
 }
+
+i{
+    color: var(--cor-principal);
+}
