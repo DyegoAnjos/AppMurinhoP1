@@ -93,7 +93,7 @@ main {
     font-size: 1.1rem;
 }
 
-#descricao {
+#descricao, #caixa_avaliacao {
     width: 100%;
     text-align: left;
     margin-top: 1rem;
@@ -101,6 +101,7 @@ main {
     padding: 1rem;
     border-radius: 1rem;
     box-sizing: border-box;
+    background: none;
 }
 
 /* Avaliações: ocupar linha inteira abaixo das duas colunas */
@@ -123,7 +124,7 @@ main {
 }
 
 .botao{
-display: inline-block;
+    display: inline-block;
     margin-left: 2rem;
     margin-top: 1rem;
     padding: 0.7rem 1.5rem;
@@ -144,6 +145,14 @@ background: var(--cor-apoio);
 
 .fa-heart:hover{
     color: var(--cor-preto);
+}
+
+#notas, option{
+    background: none;
+    width: 10%;
+    text-align: center;
+    color: var(--cor-apoio);
+    border-radius: 1rem;
 }
 
 /* Responsividade */
