@@ -6,11 +6,13 @@
     border-radius: 8px;
     background: var(--cor-fundo, #fafafa);
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    z-index: 0;
     transition: transform 0.15s;
 }
 
 .exibicao:hover {
     transform: translateY(-4px);
+    z-index: 10;
 }
 
 .exibicao img {
@@ -68,6 +70,7 @@
     color: var(--cor-fundo)
 }
 
-i{
+.produtoInfo i {
+    font-size: .95rem;
     color: var(--cor-principal);
 }
