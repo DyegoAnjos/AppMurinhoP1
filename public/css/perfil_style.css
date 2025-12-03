@@ -111,19 +111,6 @@ main {
     margin: 0 auto 2rem auto;
 }
 
-.exibicao img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 8px;
-    background: var(--cor-fundo);
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    transition: transform 0.15s;
-}
-.exibicao img:hover {
-    transform: scale(1.03);
-}
-
 @media (max-width: 800px) {
     .fotoCapa, #perfilContainer {
         max-width: 100vw;
