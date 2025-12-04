@@ -16,10 +16,10 @@
             <h1>Login</h1>
             <div id="campos">
                 <label>
-                    Email: <input type="email"placeholder="user@gmail.com" required>
+                    Email: <input type="email"placeholder="user@gmail.com">
                 </label>
                 <label>
-                    Senha: <input type="password" required>
+                    Senha: <input type="password">
                     <i class="fa-solid fa-eye"></i>
                  <i class="fa-solid fa-eye-slash escondido"></i>
                 </label>    
@@ -30,26 +30,6 @@
         </form> 
     </main>
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const passwordInput = document.querySelector('input[type="password"]');
-    const eyeIcon = document.querySelector('.fa-eye');
-    const eyeSlashIcon = document.querySelector('.fa-eye-slash');
-    
-    // Função para mostrar a senha
-    eyeIcon.addEventListener('click', function() {
-        passwordInput.type = 'text';
-        eyeIcon.classList.add('escondido');
-        eyeSlashIcon.classList.remove('escondido');
-    });
-    
-    // Função para esconder a senha
-    eyeSlashIcon.addEventListener('click', function() {
-        passwordInput.type = 'password';
-        eyeSlashIcon.classList.add('escondido');
-        eyeIcon.classList.remove('escondido');
-    });
-});
-    </script>
+    <script src="../../public/js/login._script.js"></script>
 </body>
 </html>
