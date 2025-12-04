@@ -95,7 +95,7 @@
     font-size: 0.95rem;
 }
 
-#clusterPerfil a{
+#clusterPerfil a, #clusterPerfil button{
     color: var(--cor-principal);
     text-decoration: none;
 }
@@ -109,15 +109,17 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
-.menuSection a {
+.menuSection .navegacao {
     display: block;
+    width: 100%;
     padding: 10px;
+    text-align: left;
     text-decoration: none;
     color: var(--cor-preto);
     font-size: 1rem;
 }
 
-.menuSection a:hover {
+.menuSection .navegacao:hover {
     background-color: #eee;
     color: var(--cor-principal);
     border-radius: 5px;
