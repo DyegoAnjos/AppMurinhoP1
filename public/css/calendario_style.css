@@ -1,10 +1,85 @@
 main{
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloCalendario{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.corpoCalendario{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
+    margin: auto;
+}
+
+.corpoCalendario .exibicao{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .4rem;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+    z-index: auto;
+    transition: none;
+    padding: 0;
+    background: var(--cor-apoio);
+    
+}
+
+.corpoCalendario .exibicao img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: .6rem;
+    box-shadow: none;
+    display: block;
+}
+
+/* transformar o overlay em legenda simples (estática) */
+.corpoCalendario .exibicao .produtoInfo{
+    position: static;
+    transform: none;
+    opacity: 1;
+    background: var(--cor-apoio) !important;
+    color: var(--cor-preto);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items: flex-start;
+}
+
+/* estilos compactos da legenda */
+.corpoCalendario .exibicao .produtoInfo .nomeProduto{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cor-preto);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.corpoCalendario .exibicao .produtoInfo .preco{
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--cor-preto);
+}
+
+.corpoCalendario .exibicao .produtoInfo i {
+    display: inline-flex;
 }
 
 .dia{
@@ -32,7 +107,7 @@ main{
     gap: 1rem;
 }
 
-.cardProduto{
+/* .cardProduto{
     height: 10rem;
     width: 100%;
     background-color: var(--cor-apoio);
@@ -91,7 +166,7 @@ main{
 
 .formaPagamento{
     grid-area: formaPagamento;
-}
+} */
 
 .rangeHorarios{
     grid-area: rangeHorarios;
