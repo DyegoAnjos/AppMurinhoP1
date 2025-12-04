@@ -149,3 +149,9 @@ input{
 .botaoFavoritar i{
     font-size: 1.5rem;
 }
+
+.botaoFiltro.ativo {
+    background-color: #007bff; /* Ou a cor de destaque que preferir */
+    color: white;
+    border-color: #0056b3;
+}

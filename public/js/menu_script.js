@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const botoesFechar = document.querySelectorAll('.btn-fechar');
 
+    // botões de navegação
+    const botoesNavegacao = document.querySelectorAll(".navegacao")
+
     //funcao pra fechar todas as sidebars
     function fecharTudo() {
         sidebarMenu.classList.remove('aberto');
@@ -59,4 +62,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (e) => {
         if(e.key === 'Escape') fecharTudo();
     });
+
+    botoesNavegacao[0].addEventListener('click', () => {
+        window.location.href = 'cadastro_produto.html';
+    })
+
+    botoesNavegacao[1].addEventListener('click', () => {
+        window.location.href = 'favoritos.html';
+    })
+
+    botoesNavegacao[2].addEventListener('click', () => {
+        window.location.href = 'chatCrocheMia.html';
+    })
+
+    botoesNavegacao[3].addEventListener('click', () => {
+        window.location.href = '../../index.html';
+    })
+
 });

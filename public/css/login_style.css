@@ -91,7 +91,7 @@ i:hover{
     visibility: hidden;
 }
 
-button{
+main button{
     min-width: 8rem;
     width: 20%;
     color: var(--cor-apoio);
@@ -103,7 +103,7 @@ button{
     border: none;
 }
 
-button:hover{
+main button:hover{
     color: var(--cor-fundo);
     background-color: var(--cor-apoio);
     transition: .5s;
@@ -127,8 +127,4 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     border-radius: 3rem;
-}
-
-img{
-    width: 10%;
 }
