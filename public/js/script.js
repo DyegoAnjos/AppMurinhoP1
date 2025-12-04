@@ -26,7 +26,7 @@ botoesHeaderNav[4].addEventListener('click', () => {
     window.location.href = 'login.html';
 })
 
-botaoMenuLateral.addEventListener('click', () => {
-    window.location.href = 'menu_bar.html'
-})
+// botaoMenuLateral.addEventListener('click', () => {
+//     window.location.href = 'menu_bar.html'
+// })
 

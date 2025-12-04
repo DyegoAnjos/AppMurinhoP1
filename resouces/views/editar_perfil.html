@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../public/css/style.css">
     <link rel="stylesheet" href="../../public/css/editarPerfil_style.css">
+    <link rel="stylesheet" href="../../public/css/sidebar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil</title>
 </head>
 <body>
+    <div id="overlay"></div>
     <header>
         <button type="button" id="botaoPrincipal"><img src="../../public/img/Logo.png" alt="Logo" id="logo"></button>
         <nav>
@@ -16,9 +18,83 @@
             <button type="button" class="botaoMenu">Calendário</button>
             <button type="button" class="botaoMenu">Favoritos</button>
             <button type="button" class="botaoMenu">Logar/Cadastrar</button>
-            <button type="button" id="botaoMenuLateral"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" id="btnAbrirMenu" class="menuToggle"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
+    
+    <aside id="sidebarMenu" class="sidebar">
+        <button class="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+        <div id="clusterPerfil">
+            <img src="https://paradepets.com/.image/c_fill,w_1200,h_1200,g_faces:center/NTowMDAwMDAwMDAwMTI0NDYz/sleepy-kitten.jpg" alt="Foto" class="fotoPerfil">
+            <div class="infoPerfil">
+                <p>Maria Andrade</p>
+                <a href="perfil_user.html">Ver Perfil</a>
+            </div>
+            <button id="btnAbrirNotificacoes" class="botaoNotificacao"><i class="fa-solid fa-bell"></i></a>
+        </div>
+        
+        <nav class="menuSection">
+            <h4 class="sectionTitle">Vender no Murinho</h4>
+            <a href="cadastro_produto.html">Cadastrar Produtos</a>
+        </nav>
+        <hr>
+        <nav class="menuSection">
+            <h4 class="sectionTitle">Geral</h4>
+            <a href="favoritos.html">Favoritos</a>
+            <a href="chatCrocheMia.html">Chats</a>
+            <a href="../../index.html">Sair</a>
+        </nav>
+    </aside>
+
+    <aside id="sidebarNotificacoes" class="sidebar">
+        <div class="cabecalho-sidebar">
+            <h2>Notificações</h2>
+            <button class="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div class="conteudo-sidebar">
+            <div class="notificacao-item">
+                <div class="secoesNotificacoes">
+                    <h2 class="tituloSecao">Hoje</h2>
+                    <div class="notificacao">
+                        <span class="horarioNotificacao">12:00</span>
+                        <p class="textoNotificacao">
+                            Chegou novos produtos fresquinhos
+                        </p>
+                    </div>
+                    <div class="notificacao">
+                        <p class="horarioNotificacao">
+                            00:00
+                        </p>
+                        <p class="textoNotificacao">
+                            CrochêMia está vendendo algo de novo, venha ver!
+                        </p>
+                    </div>
+                </div>
+                <div class="secoesNotificacoes">
+                    <h2 class="tituloSecao">Ontem</h2>
+                    <div class="notificacao">
+                        <p class="horarioNotificacao">
+                            01:00
+                        </p>
+                        <p class="textoNotificacao">
+                            50 pessoas visualizaram seus produtos hoje
+                        </p>
+                    </div>
+                </div>
+                <div class="secoesNotificacoes">
+                    <h2 class="tituloSecao">Últimos 7 dias</h2>
+                    <div class="notificacao">
+                        <p class="horarioNotificacao">
+                            10:00
+                        </p>
+                        <p class="textoNotificacao">
+                            Bem vinda ao DigiMuro UNIRIO 3
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </aside>
     <main>
         <form id="edit-profile-form" method="get" action="perfil_user.html" enctype="multipart/form-data">
             <div class="form-group" id="capaPerfil">            
@@ -58,5 +134,6 @@
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
         <script src="../../public/js/script.js"></script>
         <script src="../../public/js/editar_perfil_script.js"></script>
+        <script src="../../public/js/menu_script.js"></script>
 </body>
 </html>
